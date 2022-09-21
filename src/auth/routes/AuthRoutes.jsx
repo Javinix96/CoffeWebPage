@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import { LoginPage } from '../pages/LoginPage'
 import { RegisterPage } from '../pages/RegisterPage'
 
@@ -9,7 +9,7 @@ export const AuthRoutes = () => {
         <Route path='/Login' element={ <LoginPage/>}/>
         <Route path='/Register' element={ <RegisterPage/>}/>
 
-        <Route path='/*' element={<Navigate to='/Login' />} />
+        <Route path='/*' element={<Navigate to='/auth/Login' />} />
     </Routes>
   )
 }

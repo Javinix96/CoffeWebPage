@@ -1,11 +1,11 @@
 import React from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
-import { CoffeApp } from '../pages/CoffeApp'
+import { CoffePage } from '../pages/CoffePage'
 
 export const CoffeRoutes = () => {
   return (
     <Routes>
-        <Route path='/' element={<CoffeApp/>} />
+        <Route path='/' element={<CoffePage/>} />
 
         <Route path='/*' element={<Navigate to='/' />} />
     </Routes>
