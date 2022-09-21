@@ -1,0 +1,2 @@
+son los comando que debes installar en el proyecto, escribirlos tal cual
+npm install react-router-dom@6
